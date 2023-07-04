@@ -11,6 +11,7 @@ import MakeAdmin from './Pages/Dashboard/MakeAdmin/MakeAdmin';
 import DashboardHome from './Pages/Dashboard/DashboardHome/DashboardHome';
 import AddDoctors from './Pages/Dashboard/AddDoctors/AddDoctors';
 import AdminRoute from './AdminRoute/AdminRoute';
+import UPloadTestion from './UploadTesting/UPloadTestion';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <BrowserRouter>
           <Routes>
               <Route path="/" element={<Home></Home>}/>
+              <Route path="/image" element={<UPloadTestion></UPloadTestion>}/>
               <Route path="/appoinment" element={<PrivateRoute><Appoinment></Appoinment></PrivateRoute>}/>
               <Route path="/login" element={<Login></Login>}/>
               <Route path="/register" element={<Register></Register>}/>
